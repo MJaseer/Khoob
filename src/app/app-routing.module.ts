@@ -11,10 +11,14 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module').then((_) => _.AdminModule)
   },
   {
+    path: 'pract',
+    loadChildren: () => import('./practice/practice.module').then((_) => _.PracticeModule)
+  },
+  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,4 @@
+<p>comp-one works!</p>
+
+<app-comp-two [dataFromParent]="dataFromChild" (outputData)="onDataChanged($event)" ></app-comp-two>
+<span>Data from Child : {{dataFromChild}}</span>
